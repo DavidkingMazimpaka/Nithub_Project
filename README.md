@@ -23,8 +23,8 @@ This project is a sentiment analysis system that scrapes sentences from news art
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/sentiment-analysis-system.git
-   cd sentiment-analysis-system
+   git clone https://github.com/yourusername/nithyb_project.git
+   cd nithyb_project
    ```
 
 2. **Create a Virtual Environment:**
@@ -56,10 +56,10 @@ This project is a sentiment analysis system that scrapes sentences from news art
 
 ### Scrape and Annotate Sentences
 
-To scrape and annotate sentences, run the `combined_scrape_annotate.py` script:
+To scrape and annotate sentences, run the `scrapp_annotate.py` script:
 
 ```sh
-python combined_scrape_annotate.py
+python scrapp_annotate.py
 ```
 
 ### Run the Flask App
