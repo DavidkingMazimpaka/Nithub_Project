@@ -8,7 +8,7 @@ This project is a sentiment analysis system that scrapes sentences from news art
 
 1. **Scraping:** Scrapes 200 sentences from BBC news source.
 2. **Annotation:** Annotates sentences based on their sentiments (positive, neutral, negative) using VADER.
-3. **REST API:** Deploys the sentiment analysis model as a REST API using Flask.
+3. **FastAPI:** Deploys the sentiment analysis model as a FastAPI using Flask.
 4. **Model Optimization:** Optimizes the model for inference speed using a lighter architecture.
 5. **A/B Testing:** Implements A/B testing to compare the performance of the recommendation system against a baseline model.
 
