@@ -1,4 +1,4 @@
-# Sentiment Analysis System
+# Sentiment Analysis System- Nithub Project
 
 ## Project Overview
 
@@ -23,8 +23,8 @@ This project is a sentiment analysis system that scrapes sentences from news art
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/sentiment-analysis-system.git
-   cd sentiment-analysis-system
+   git clone https://github.com/yourusername/nithyb_project.git
+   cd nithyb_project
    ```
 
 2. **Create a Virtual Environment:**
@@ -114,7 +114,7 @@ curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -
 
 ## Authors
 
-KingDavid Mazimpaka - [https://github.c](https://github.com/DavidkingMazimpaka)
+KingDavid Mazimpaka - [KingDavid Mazimpaka](https://github.com/DavidkingMazimpaka)
 
 ## Contributing
 
