@@ -114,7 +114,7 @@ curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -
 
 ## Authors
 
-KingDavid Mazimpaka - [https://github.c](https://github.com/DavidkingMazimpaka)
+KingDavid Mazimpaka - [KingDavid Mazimpaka](https://github.com/DavidkingMazimpaka)
 
 ## Contributing
 
