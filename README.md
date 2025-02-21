@@ -6,7 +6,7 @@ This project is a sentiment analysis system that scrapes sentences from news art
 
 ## Features
 
-1. **Scraping:** Scrapes 200 sentences from an English news source.
+1. **Scraping:** Scrapes 200 sentences from BBC news source.
 2. **Annotation:** Annotates sentences based on their sentiments (positive, neutral, negative) using VADER.
 3. **REST API:** Deploys the sentiment analysis model as a REST API using Flask.
 4. **Model Optimization:** Optimizes the model for inference speed using a lighter architecture.
