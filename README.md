@@ -2,13 +2,14 @@
 
 ## Project Overview
 
-This project is a sentiment analysis system that scrapes sentences from news articles, annotates them based on their sentiments, and deploys the trained model as a REST API using Flask. It also includes model optimization and A/B testing functionalities.
+This project is a sentiment analysis system that scrapes sentences from news articles, annotates them based on their sentiments, and deploys the trained model as a REST API using FastAPI. It also includes model optimization and A/B testing functionalities.
+
 
 ## Features
 
 1. **Scraping:** Scrapes 200 sentences from BBC news source.
 2. **Annotation:** Annotates sentences based on their sentiments (positive, neutral, negative) using VADER.
-3. **FastAPI:** Deploys the sentiment analysis model as a FastAPI using Flask.
+3. **REST API:** Deploys the sentiment analysis model as a REST API using FastAPI.
 4. **Model Optimization:** Optimizes the model for inference speed using a lighter architecture.
 5. **A/B Testing:** Implements A/B testing to compare the performance of the recommendation system against a baseline model.
 
@@ -67,7 +68,7 @@ python scrapp_annotate.py
 To start the FastAPI app for sentiment prediction, run:
 
 ```sh
-python app.py or uvicorn app:app --reload
+uvicorn app:app --reload
 ```
 
 The app will be available at `http://127.0.0.1:8000`.
@@ -77,7 +78,7 @@ The app will be available at `http://127.0.0.1:8000`.
 To start the FastAPI app for A/B testing, run:
 
 ```sh
-python ab_testing.py
+uvicorn ab_testing:app --reload
 ```
 
 The app will be available at `http://127.0.0.1:8000`.
