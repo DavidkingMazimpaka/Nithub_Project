@@ -56,31 +56,31 @@ This project is a sentiment analysis system that scrapes sentences from news art
 
 ### Scrape and Annotate Sentences
 
-To scrape and annotate sentences, run the `combined_scrape_annotate.py` script:
+To scrape and annotate sentences, run the `scrapp_annotate.py` script:
 
 ```sh
-python combined_scrape_annotate.py
+python scrapp_annotate.py
 ```
 
-### Run the Flask App
+### Run the FastAPI App
 
-To start the Flask app for sentiment prediction, run:
+To start the FastAPI app for sentiment prediction, run:
 
 ```sh
-python app.py
+python app.py or uvicorn app:app --reload
 ```
 
-The app will be available at `http://127.0.0.1:5000`.
+The app will be available at `http://127.0.0.1:8000`.
 
 ### Run A/B Testing
 
-To start the Flask app for A/B testing, run:
+To start the FastAPI app for A/B testing, run:
 
 ```sh
 python ab_testing.py
 ```
 
-The app will be available at `http://127.0.0.1:5000`.
+The app will be available at `http://127.0.0.1:8000`.
 
 ## API Endpoints
 
@@ -88,7 +88,7 @@ The app will be available at `http://127.0.0.1:5000`.
 
 - **URL:** `/predict`
 - **Method:** `POST`
-- **Data Params:** `{ "url": "<news_article_url>" }`
+- **Data Params:** `{ "url": "<news_url>" }`
 - **Success Response:**
   - **Code:** 200
   - **Content:** `[{ "sentence": "<sentence>", "sentiment": "<sentiment>" }, ...]`

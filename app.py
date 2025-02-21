@@ -1,14 +1,18 @@
-from flask import Flask, request, jsonify
-from annotate_sentences import annotate_sentences
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from scrapp_annotate import scrape_news, annotate_sentences
 
-app = Flask(__name__)
+app = FastAPI()
 
-@app.route('/predict', methods=['POST'])
-def predict_sentiment():
-    data = request.get_json(force=True)
-    sentences = data['sentences']
-    annotated_sentences = annotate_sentences(sentences)
-    return jsonify(annotated_sentences)
+class URLRequest(BaseModel):
+    url: str
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.post("/predict")
+async def predict_sentiment(request: URLRequest):
+    try:
+        sentences = scrape_news(request.url)
+        annotated_sentences = annotate_sentences(sentences)
+        return annotated_sentences
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
